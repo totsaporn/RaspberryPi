@@ -24,9 +24,8 @@ def get_page_data(page_id,access_token):
 			
 			
 while 1:
-	page_id = "351365201724568" # username or id HomeOfMaker.com
-	token ="CAAW2K2zYVOsBAG7sDJdYHel1885ISrOhpq8fPp00ffeJiEyYJZAwt6QlBPTWy6XcucDdZAP6iANDfUPNFidJbct7eRHai1ZBZBAvQD4cVx5v2kQVdw8JeEZCa3EgTlOirk4g9iKcvJlxvNLkZBqQ6UhpiM5lLjrLxnt177Fnjwmz80BVNWQZBfkNFRusX6cKOo3C1Rd2YPZC13gDfsOZCTi4A" # HOM Access Token
-	
+	page_id = "351365201724568" # username or id Home of Maker
+	token = "CAAW2K2zYVOsBAG7sDJdYHel1885ISrOhpq8fPp00ffeJiEyYJZAwt6QlBPTWy6XcucDdZAP6iANDfUPNFidJbct7eRHai1ZBZBAvQD4cVx5v2kQVdw8JeEZCa3EgTlOirk4g9iKcvJlxvNLkZBqQ6UhpiM5lLjrLxnt177Fnjwmz80BVNWQZBfkNFRusX6cKOo3C1Rd2YPZC13gDfsOZCTi4A"  # Access Token
 	page_data = get_page_data(page_id,token)
 
 	print "Page Name:"+ page_data['name']
