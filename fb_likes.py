@@ -19,8 +19,8 @@ def get_page_data(page_id,access_token):
         elif hasattr(e, 'reason'):
             return e.reason
 
-page_id = "1607672509519083" # username or id
-token = "CAAW2K2zYVOsBAHBfqbqlyH02DHNapXWtMwmfKo9dJQqinJVWUicyLPoZCOuaf0iMQzcJMZAcHnWfHJZCn3YpBxKNpLGXZBGa8HtpgAhVfcbPTrSUfI2JiDqj2ngi5EhXvWPVaskrZBT5RiDtVeZAWsASMqHQ6EuUmlLTnw6BHMdEUKvu9VpVIpBZBKfxgbxlavYMFyLoYy4RdjuCqVy83ZCuE6GVYQbcRvCTjcafM9E9kwZDZD"  # Access Token
+page_id = "220577814776434" # username or id
+token = "CAAUPwb9lSv0BALCKWiHlobvLZBZAiQN8OntZBbrQAaxVFufGTl8qqUvpPgaE83ZCFoSLl5WbDhoRvt3bSxZBW2Y8HpP5lnS8XRRrOysJFOF5UBnh9beIRcWoLTib3LgBaHqQCUrC2UFrT1nay5NTrS5UWZCZCFQolBBLBH3Mea26qTzScTPu1Gy6MQ4NUxtPuD4ZCf7bjxoO9ZBNPbPBBZBJe5"  # Access Token
 page_data = get_page_data(page_id,token)
 
 print "Page Name:"+ page_data['name']
