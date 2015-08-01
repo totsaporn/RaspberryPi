@@ -24,7 +24,7 @@ def get_page_data(page_id,access_token):
 			
 			
 while 1:
-	page_id = "220577814776434" # username or id
+	page_id = "220577814776434" # username or id Sathittham.com
 	token = "CAAUPwb9lSv0BALCKWiHlobvLZBZAiQN8OntZBbrQAaxVFufGTl8qqUvpPgaE83ZCFoSLl5WbDhoRvt3bSxZBW2Y8HpP5lnS8XRRrOysJFOF5UBnh9beIRcWoLTib3LgBaHqQCUrC2UFrT1nay5NTrS5UWZCZCFQolBBLBH3Mea26qTzScTPu1Gy6MQ4NUxtPuD4ZCf7bjxoO9ZBNPbPBBZBJe5"  # Access Token
 	page_data = get_page_data(page_id,token)
 
@@ -32,8 +32,9 @@ while 1:
 	print "Likes:"+ str(page_data['likes'])
 	print "Link:"+ page_data['link']
 
-	#7-segment display
-   device = led.sevensegment()
-   device.write_number(devicedId=0, value=data[“likes”])
 
-   time.sleep(0.5)
+	#7-segment display
+    device = led.sevensegment()
+    device.write_number(deviceId=0, value=page_data['likes'])
+
+    time.sleep(0.5)
