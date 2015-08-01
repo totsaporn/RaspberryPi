@@ -24,17 +24,17 @@ def get_page_data(page_id,access_token):
 			
 			
 while 1:
-	page_id = "220577814776434" # username or id Sathittham.com
-	token = "CAAUPwb9lSv0BALCKWiHlobvLZBZAiQN8OntZBbrQAaxVFufGTl8qqUvpPgaE83ZCFoSLl5WbDhoRvt3bSxZBW2Y8HpP5lnS8XRRrOysJFOF5UBnh9beIRcWoLTib3LgBaHqQCUrC2UFrT1nay5NTrS5UWZCZCFQolBBLBH3Mea26qTzScTPu1Gy6MQ4NUxtPuD4ZCf7bjxoO9ZBNPbPBBZBJe5"  # Access Token
+	page_id = "351365201724568" # username or id HomeOfMaker.com
+	token ="CAAW2K2zYVOsBAG7sDJdYHel1885ISrOhpq8fPp00ffeJiEyYJZAwt6QlBPTWy6XcucDdZAP6iANDfUPNFidJbct7eRHai1ZBZBAvQD4cVx5v2kQVdw8JeEZCa3EgTlOirk4g9iKcvJlxvNLkZBqQ6UhpiM5lLjrLxnt177Fnjwmz80BVNWQZBfkNFRusX6cKOo3C1Rd2YPZC13gDfsOZCTi4A" # HOM Access Token
+	
 	page_data = get_page_data(page_id,token)
 
 	print "Page Name:"+ page_data['name']
 	print "Likes:"+ str(page_data['likes'])
 	print "Link:"+ page_data['link']
 
-
 	#7-segment display
-    device = led.sevensegment()
-    device.write_number(deviceId=0, value=page_data['likes'])
+	device = led.sevensegment()
+	device.write_number(deviceId=0, value=page_data['likes'])
 
-    time.sleep(0.5)
+	time.sleep(0.5)
